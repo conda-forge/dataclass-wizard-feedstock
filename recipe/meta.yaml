@@ -1,5 +1,5 @@
 {% set name = "dataclass-wizard" %}
-{% set version = "0.26.1" %}
+{% set version = "0.28.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0460c7bd03685896a904d92101b6b65791a7b4a9a1222b921815cf08401f6a1e
+  sha256: dd295cff8df6d8167a79048b77e91a3a1287a5905363f8df4de819b50d83b03a
 
 build:
   number: 0
