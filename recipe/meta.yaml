@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python
-    - typing-extensions >=3.7.4.2
+    - typing-extensions >=4
 
 test:
   imports:
