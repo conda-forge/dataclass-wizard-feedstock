@@ -18,10 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python
     - typing-extensions >=3.7.4.2
 
 test:
