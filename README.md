@@ -15,7 +15,7 @@ Documentation: https://dataclass-wizard.readthedocs.io/
 
 The dataclass-wizard library provides a set of simple, yet
 elegant *wizarding* tools for interacting with the Python
-`dataclasses` module in Python 3.6+.
+`dataclasses` module in Python 3.9+.
 
 The primary use is as a fast serialization framework that enables
 dataclass instances to be converted to/from JSON; this works well
