@@ -10,7 +10,7 @@ source:
   sha256: 10edbac626c390ed1f3be4f972303bc2c25c162fd453d55adfe22b05b263ee6d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - wiz={{ name|replace('-', '_') }}.wizard_cli.cli:main
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - typing-extensions >=4
 
 test:
@@ -30,6 +30,7 @@ test:
     - {{ name|replace('-', '_') }}
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - wiz --help
