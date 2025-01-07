@@ -14,7 +14,7 @@ build:
   noarch: python
   entry_points:
     - wiz={{ name|replace('-', '_') }}.wizard_cli.cli:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
